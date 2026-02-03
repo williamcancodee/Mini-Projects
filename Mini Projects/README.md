@@ -58,3 +58,33 @@ A function that extracts "secret codes" from poems based on word lengths.
 **Usage:**
 - Input: List of poem strings.
 - Example: Extracts codes from sample poems like "Stars and the moon shine in the sky...".
+
+### 5. Password Generator (`password_generator.py`)
+
+A utility to generate strong, random passwords with customizable options.
+
+**Key Function:**
+- `generate_password(length=12, include_uppercase=True, include_lowercase=True, include_numbers=True, include_symbols=True)`: Generates a password based on criteria.
+
+**Features:**
+- Customizable length (4-50 characters).
+- Options to include/exclude uppercase, lowercase, numbers, and symbols.
+- Ensures at least one character type is selected.
+
+**Usage:**
+- Example: `generate_password(10, include_symbols=False)` generates a 10-character password without symbols.
+
+### 6. Unit Converter (`unit_converter.py`)
+
+A tool for converting between common units in length, weight, and temperature.
+
+**Key Function:**
+- `convert_units(value, from_unit, to_unit, category)`: Converts a value between units in a specified category.
+
+**Supported Categories:**
+- Length: meter, kilometer, centimeter, millimeter, inch, foot, yard, mile.
+- Weight: gram, kilogram, milligram, pound, ounce, ton.
+- Temperature: Celsius, Fahrenheit, Kelvin.
+
+**Usage:**
+- Example: `convert_units(5, 'meter', 'foot', 'length')` returns 16.4042.
