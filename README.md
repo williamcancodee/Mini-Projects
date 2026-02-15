@@ -109,3 +109,23 @@ A script that validates medical records data against predefined constraints.
 - Input: A list or tuple of dictionaries, each with the required keys.
 - Example: Validates the provided `medical_records` list and prints validation results.
 
+### 8. User Config Manager (`user_config_manager.py`)
+
+A utility to manage user settings with add, update, delete, and view operations.
+
+**Key Functions:**
+- `add_setting(settings, new_setting)`: Adds a new setting key-value pair to the settings dictionary.
+- `update_setting(settings, new_setting)`: Updates an existing setting with a new value.
+- `delete_setting(settings, key)`: Deletes a setting by its key.
+- `view_settings(settings)`: Displays all current user settings in a formatted output.
+
+**Features:**
+- Keys and values are converted to lowercase for consistency.
+- Prevents duplicate keys when adding new settings.
+- Validates that keys exist before updating or deleting.
+- Returns informative success/error messages for each operation.
+
+**Usage:**
+- Example: `add_setting({}, ("theme", "dark"))` adds a new setting "theme" with value "dark".
+- Example: `view_settings({"theme": "dark", "volume": "high"})` displays all settings.
+
