@@ -129,3 +129,23 @@ A utility to manage user settings with add, update, delete, and view operations.
 - Example: `add_setting({}, ("theme", "dark"))` adds a new setting "theme" with value "dark".
 - Example: `view_settings({"theme": "dark", "volume": "high"})` displays all settings.
 
+### 9. Expense Tracker (`expense_tracker.py`)
+
+A practical utility for tracking expenses, viewing spending by category, and checking budget progress.
+
+**Key Functions:**
+- `add_expense(expenses, amount, category, note="")`: Adds a validated expense entry.
+- `total_spent(expenses)`: Calculates the total amount spent.
+- `category_breakdown(expenses)`: Returns total spending grouped by category.
+- `budget_status(expenses, budget)`: Compares total spending against a monthly budget.
+
+**Features:**
+- Validates core inputs (list structure, positive amounts, non-empty categories).
+- Keeps amounts rounded to 2 decimal places.
+- Provides a quick spending summary to identify top categories.
+- Reports whether spending is within budget or over budget.
+
+**Usage:**
+- Example: `add_expense([], 12.5, "Food", "Lunch")` adds a food expense.
+- Example: `budget_status(expenses, 200)` returns remaining budget and percent used.
+
